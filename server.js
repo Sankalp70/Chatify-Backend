@@ -22,10 +22,7 @@ app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
 app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+  cors(());
 
 server.listen(PORT, () => {
   connectToMongoDB();
